@@ -6,9 +6,9 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
+  title: 'Overview',
   favicon: 'img/favicon.ico',
+  staticDirectories: ['images', 'static'],
 
   // Set the production url of your site here
   url: 'https://your-docusaurus-test-site.com',
@@ -38,19 +38,7 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          sidebarPath: require.resolve('./sidebars.js'),
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-        },
-        blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-        },
+          sidebarPath: require.resolve('./sidebars.js'),},
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
@@ -64,21 +52,21 @@ const config = {
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
-        title: 'My Site',
-        logo: {
-          alt: 'My Site Logo',
-          src: 'img/logo.svg',
-        },
+        title: 'Overview',
+        // logo: {
+        //   alt: 'My Site Logo',
+        //   src: 'img/logo.svg',
+        // },
         items: [
           {
             type: 'doc',
-            docId: 'intro',
+            docId: 'project1/project1',
             position: 'left',
-            label: 'Tutorial',
+            label: 'Projects',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
+        /*   {to: '/blog', label: 'Blog', position: 'left'}, */
           {
-            href: 'https://github.com/facebook/docusaurus',
+            href: 'https://github.com/wasanderes94/example-monorepo',
             label: 'GitHub',
             position: 'right',
           },
@@ -86,7 +74,7 @@ const config = {
       },
       footer: {
         style: 'dark',
-        links: [
+/*         links: [
           {
             title: 'Docs',
             items: [
@@ -126,8 +114,8 @@ const config = {
               },
             ],
           },
-        ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        ], */
+        copyright: `Copyright © ${new Date().getFullYear()} example-monorepo, Inc. Built with Docusaurus.`,
       },
       prism: {
         theme: lightCodeTheme,
