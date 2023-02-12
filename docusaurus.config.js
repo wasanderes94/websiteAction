@@ -22,7 +22,7 @@ const config = {
   // If you aren't using GitHub pages, you don't need these.
   organizationName: github.context.repo.owner , // Usually your GitHub org/user name.
   projectName: github.context.repo.repo, // Usually your repo name.
-
+  
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
 
