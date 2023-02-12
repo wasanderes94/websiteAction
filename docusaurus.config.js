@@ -13,15 +13,15 @@ const config = {
   staticDirectories: ['images', 'static'],
 
   // Set the production url of your site here
-  url: 'https://example-monorepo.io',
+  url: 'https://example-monorepo.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/example-monorepo',
+  baseUrl: `/${github.context.repo.repo}/`,
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'wasanderes94' , // Usually your GitHub org/user name.
-  projectName: 'example-monorepo', // Usually your repo name.
+  organizationName: github.context.repo.owner , // Usually your GitHub org/user name.
+  projectName: github.context.repo.repo, // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
