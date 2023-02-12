@@ -17,12 +17,12 @@ const config = {
   url: 'https://example-monorepo.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: `/${github.context.repo.repo}/`,
-  //baseUrl: 'bla',
+  //baseUrl: `/${github.context.repo.repo}/`,
+  baseUrl: 'bla',
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: github.context.repo.owner , // Usually your GitHub org/user name.
-  projectName: github.context.repo.repo, // Usually your repo name.
+  //organizationName: github.context.repo.owner , // Usually your GitHub org/user name.
+  //projectName: github.context.repo.repo, // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -65,7 +65,7 @@ const config = {
             type: 'doc',
             position: 'left',
             label: 'Projects',
-            docId: "README",
+            docId: "README-0",
           },
           {
             href: 'https://github.com/wasanderes94/example-monorepo',
