@@ -65,7 +65,7 @@ const config = {
             type: 'doc',
             position: 'left',
             label: 'Projects',
-            docId: "README-0",
+            docId: "README",
           },
           {
             href: 'https://github.com/wasanderes94/example-monorepo',
